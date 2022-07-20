@@ -6,7 +6,6 @@ const Home: NextPage = () => {
   return (
     <div className="w-2/3 mx-auto pt-28">
       <h1 className="font-bold text-2xl">Arif Dogan</h1>
-      <h3 className="mt-2 underline cursor-pointer hover:no-underline">Publications</h3>
       <h3 onClick={() => router.push(`/blog`)} className="mt-1 underline cursor-pointer hover:no-underline">
         Blog
       </h3>
