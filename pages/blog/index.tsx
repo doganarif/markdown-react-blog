@@ -28,7 +28,9 @@ const Blog = ({ blogs }) => {
     <div className="w-2/3 mx-auto md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0">
       {blogs.map(({ slug, frontmatter }) => (
         <Link href={`/blog/${slug}`}>
-          <h1 className="p-4 font-bold text-xl cursor-pointer hover:text-gray-500 hover:underline">{frontmatter.title}</h1>
+          <h1 className="p-4 font-bold text-xl cursor-pointer hover:text-gray-500 hover:underline">
+            {frontmatter.title}
+          </h1>
         </Link>
       ))}
     </div>
